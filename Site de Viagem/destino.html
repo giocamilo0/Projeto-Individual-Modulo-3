@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESTINO</title>
+</head>
+
+<!--Início CSS-->
+<style>
+  /*Header - Menu*/
+
+  .navbar {
+    padding: 20px;
+    background-color: white;
+
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  .talent {
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  /**MENU - OPÇÕES**/
+  .nav-link {
+    justify-content: space-evenly;
+    color: rgba(11, 28, 95, 0.866);
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .navbar-nav a:hover {
+    background-color: rgba(94, 94, 89, 0.034);
+  }
+
+  /**BOTÃO**/
+
+  .btn {
+    margin: 15px 15px 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  /*INÍCIO FORMS E CARDS BOOTSTRAP*/
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .gridimg {
+    background-color: rgba(211, 214, 221, 0.638);
+    border: solid 1px 2px;
+  }
+
+  img:hover {
+    opacity: 1;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .card {
+    border: 0;
+    padding-left: 30px
+  }
+
+  .viagens p {
+    font-size: 45px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(11, 28, 95, 0.866);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 60px;
+    padding: 40px;
+    text-decoration: none;
+  }
+
+  .card h5 {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  .btn {
+    background-color: rgba(11, 28, 95, 0.866);
+    color: white;
+  }
+
+  .viagens {
+    align-items: center;
+    text-align: center;
+    padding: 50px 100px;
+  }
+
+  */
+  /*INÍCIO CARDS COPIADO DE BLOG*/
+
+  .card {
+    margin: 0px;
+    border: none;
+  }
+
+  .card-body a {
+    text-decoration: none;
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  .row {
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-around;
+  }
+
+  .list-group {
+
+    font-size: 17px;
+    padding-top: 20px;
+
+  }
+
+  .list-group-item {
+    background-color: rgba(11, 28, 95, 0.638);
+    color: white;
+  }
+
+  .viagens {
+    display: grid;
+    grid-template-rows: auto;
+
+  }
+
+  .card-text {
+    font-size: 20px;
+    background-color: rgba(11, 28, 95, 0.866);
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+
+  }
+
+  .cardss {
+    margin: none;
+  }
+
+  /*FIM FORMS E CARDS BOOTSTRAP*/
+
+  /*INÍCIO FOOTER*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-between;
+    text-align: center;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(11, 28, 95, 0.866);
+    margin-top: 250px;
+    padding: 70px;
+    text-decoration: none;
+  }
+
+  .grid-container>div {
+    font-size: 20px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+  }
+</style>
+
+<!--Início HTML-->
+
+<body>
+  <section>
+    <!-- Inicio Menu Nav -->
+    <header class="container-fluid menu-nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+
+            <h1 class="talent">TALENT ROUTE</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="sobrenos.html">Quem somos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promocao.html">Promoções</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="destino.html">Destinos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog2.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contato2.html">Contato</a>
+              </li>
+
+              <a href="cadastro.html">
+                <button
+                  style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                  class="btn btn-primary" type="submit">Cadastre-se</button>
+              </a>
+              <a href="login3.html">
+                <button
+                  style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                  class="btn btn-primary" type="submit">Entrar</button>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!--BANNER-->
+  <header>
+    <div class="containerimg">
+      <div class="row">
+        <div class="column-12">
+          <img src="img/banner4PAINT2.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--INÍCIO PÁGINA DESTINO- MAIN-->
+
+  <main>
+    <div class="viagens">
+      <p>Explore o seu destino</p>
+
+      <!--Início Forms BOOTSTRAP-->
+
+      <form class="row gy-2 gx-3">
+        <div class="col-4">
+          <label class="visually-hidden" for="autoSizingInput">Name</label>
+          <input type="text" class="form-control" id="autoSizingInput" placeholder="Para onde? País, cidade..">
+        </div>
+        <div class="col-4">
+          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+          <div class="input-group">
+
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Check-in/Check-out">
+          </div>
+        </div>
+        <div class="col-2">
+          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+          <select class="form-select" id="autoSizingSelect">
+            <option selected>Pessoas</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6+</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              I'm traveling for work
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+    <!--CARDSSSSSS-->
+    <main class="cardss">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/montains.jpg" class="card-img-top" alt="..." width="350px">
+            <div class="card-body">
+              <a href="#">
+                <p class="card-text">Montanhas</p>
+              </a>
+              <div class="list-group">
+                <p>A região dos Fjords é localizada na Noruega e une lindas montanhas e rios.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/beachh.jpg" class="card-img-top" alt="..." width="350px">
+            <div class="card-body">
+              <a href="#">
+                <p class="card-text">Praias</p>
+              </a>
+              <div class="list-group">
+                <p>Espanha é um dos país com mais praias na Europa. Platja de la Ribera é uma das praias mais populares.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="img/river1.jpg" class="card-img-top" alt="..." width="350px">
+            <div class="card-body">
+              <a href="#">
+                <p class="card-text">Lagos e Rios</p>
+              </a>
+              <div class="list-group">
+                <p>Canadá é conhecido como a terra dos lagos. O país tem mais de 30 mil lagos.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <!--CARDS BOOTSTRAP-->
+
+    <!--INÍCIO FOOTER-->
+
+
+    <div class="grid-container">
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item1">Nos Contate</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item2">Termos</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item3">Outros Serviços</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item4">Suporte</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item5">Privacidade</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item6">Pagamentos</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item7">Feedback</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item8">Condições</div>
+      </a>
+      <a href="#" style="text-decoration:none">
+        <div class="grid-item9">Nosso grupo</div>
+      </a>
+    </div>
+    <footer>
+      <p>Copyright©2022 TOURISM NOTES </p>
+      <p>All rights reserved</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

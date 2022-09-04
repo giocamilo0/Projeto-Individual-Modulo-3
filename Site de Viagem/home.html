@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="cssnew/cssnew.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Link css externo insexCaptura -->
+  <link rel="stylesheet" href="Css/indexCapitura.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+</head>
+
+<!--INÍCIO CSS-->
+
+<style>
+  /*Header - Menu*/
+
+  body {
+    background-color: white;
+  }
+
+  .navbar {
+    padding: 20px;
+    background-color: white;
+
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  .talent {
+    color: rgba(11, 28, 95, 0.866);
+  }
+
+  /**MENU - OPÇÕES**/
+  .nav-link {
+    justify-content: space-evenly;
+    color: rgba(11, 28, 95, 0.866);
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .navbar-nav a:hover {
+    background-color: rgba(94, 94, 89, 0.034);
+  }
+
+  /**CARDS BOOTSTRAP*/
+
+  .card {
+    border: none;
+  }
+
+  .card-body {
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+  }
+
+  .card-title {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(11, 28, 95, 0.866);
+    font-size: 50px;
+    padding-bottom: 8%;
+    padding-top: 7%;
+  }
+
+  .card-title2 {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-bottom: 15px;
+    padding-top: 20px;
+  }
+
+  .card-text {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  /*BOTÃO CARD*/
+
+  .btn {
+    background-color: rgba(11, 28, 95, 0.866);
+    color: white;
+  }
+
+  /*FOOTER*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-between;
+    text-align: center;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(11, 28, 95, 0.866);
+    margin-top: 250px;
+    padding: 70px;
+    text-decoration: none;
+  }
+
+  .grid-container>div {
+    font-size: 20px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    color: rgba(11, 28, 95, 0.866);
+  }
+</style>
+
+<!--Início HTML-->
+
+<body>
+  <section>
+    <!-- Inicio Menu Nav -->
+    <header class="container-fluid menu-nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+
+            <h1 class="talent">TALENT ROUTE</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="sobrenos.html">Quem somos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promocao.html">Promoções</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="destino.html">Destinos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog2.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contato2.html">Contato</a>
+              </li>
+              <a href="cadastro.html">
+                <button
+                  style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                  class="btn btn-primary" type="submit">Cadastre-se</button>
+              </a>
+              <a href="login3.html">
+                <button
+                  style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                  class="btn btn-primary" type="submit" href="login.html">Entrar</button>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!--HEADER - BANNER-->
+  <header>
+    <div class="containerimg">
+      <div class="row">
+        <div class="column-12">
+          <img src="img/banner4PAINT2.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--MAIN - CARDS BOOTSTRAP-->
+  <main>
+    <div class="card text-center">
+      <div class="card-body p-5">
+        <h5 class="card-title">OFERTAS ESPECIAIS</h5>
+        <h2 class="card-title2">20% de DESCONTO</h2>
+        <img src="img/capitolio.jpg" width="420px">
+        <p class="card-text">MALLORCA, ESPANHA</p>
+        <a href="#" class="btn">MAIS INFORMAÇÕES</a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-body p-5">
+        <h2 class="card-title2">20% de DESCONTO</h2>
+        <img src="img/greece.jpg" width="420px">
+        <p class="card-text">CRETE, GRÉCIA.</p>
+        <a href="#" class="btn">MAIS INFORMAÇÕES</a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-body p-5">
+        <h2 class="card-title2">20 de DESCONTO</h2>
+        <img src="img/beach.jpg" width="420px">
+        <p class="card-text">MACEIÓ, BRASIL</p>
+        <a href="#" class="btn">MAIS INFORMAÇÕES</a>
+      </div>
+    </div>
+  </main>
+
+  <!--FOOTER-->
+
+  <div class="grid-container">
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item1">Nos Contate</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item2">Termos</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item3">Outros Serviços</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item4">Suporte</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item5">Privacidade</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item6">Pagamentos</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item7">Feedback</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item8">Condições</div>
+    </a>
+    <a href="#" style="text-decoration:none">
+      <div class="grid-item9">Nosso grupo</div>
+    </a>
+  </div>
+  <footer>
+    <p>Copyright©2022 TOURISM NOTES </p>
+    <p>All rights reserved</p>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

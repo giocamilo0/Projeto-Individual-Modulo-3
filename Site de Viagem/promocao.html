@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMOÇÕES</title>
+</head>
+
+<!--INÍCIO CSS-->
+<style>
+    /*Header - Menu*/
+
+    .navbar {
+        padding: 20px;
+        background-color: white;
+
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .talent {
+        color: rgba(11, 28, 95, 0.866);
+
+    }
+
+    /**MENU - OPÇÕES**/
+    .nav-link {
+        justify-content: space-evenly;
+        color: rgba(11, 28, 95, 0.866);
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .navbar-nav a:hover {
+        background-color: rgba(94, 94, 89, 0.034);
+    }
+
+    /*INÍCIO PROMOÇÕES*/
+
+    .card {
+        margin: 25px;
+    }
+
+    .promo {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .row {
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+        justify-content: space-around;
+    }
+
+    .list-group {
+
+        font-size: 17px;
+        background-color: rgba(91, 121, 239, 0.997);
+    }
+
+    .list-group-item {
+        background-color: rgba(11, 28, 95, 0.866);
+        color: white;
+    }
+
+    .viagens {
+        display: grid;
+        grid-template-rows: auto;
+
+    }
+
+    .card-text {
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-content: space-between;
+        text-align: center;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: rgba(11, 28, 95, 0.866);
+        margin-top: 250px;
+        padding: 70px;
+        text-decoration: none;
+    }
+
+    .grid-container>div {
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-decoration: none;
+    }
+</style>
+
+<!--Início HTML-->
+
+<body>
+    <section>
+        <!-- Inicio Menu Nav -->
+        <header class="container-fluid menu-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+
+                        <h1 class="talent">TALENT ROUTE</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="sobrenos.html">Quem somos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promocao.html">Promoções</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="destino.html">Destinos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog2.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato2.html">Contato</a>
+                            </li>
+
+                            <a href="cadastro.html"></a>
+                            <button
+                                style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                class="btn btn-primary" type="submit">Cadastre-se</button>
+                            </a>
+                            <a href="login3.html">
+                                <button
+                                    style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                    class="btn btn-primary" type="submit">Entrar</button>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!--HEADER - BANNER-->
+
+    <header>
+        <div class="containerimg">
+            <div class="row">
+                <div class="column-12">
+                    <img src="img/banner4PAINT2.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--INÍCIO MAIN - PROMOÇÕES-->
+
+    <main>
+        <h1 class="promo">MELHORES PACOTES DE VIAGENS</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/sydney2.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <p class="card-text">Sydney, Australia</p>
+                        <!--Button-->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/amazon.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <p class="card-text">Amazônia, Brasil</p>
+                        <!--Button-->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/bergen.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <p class="card-text">Bergen, Noruega</p>
+                        <!--Button-->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/thailand3.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <p class="card-text">Bangkok, Tailândia</p>
+                            <!--Button-->
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/mozambique.png" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <p class="card-text">Bazaruto, Moçambique</p>
+                            <!--Button-->
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/jericoacoara.png" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <p class="card-text">Jericoacoara, Brasil</p>
+                            <!--Button-->
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">Consultar preços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!--FOOTER-->
+
+    <div class="grid-container">
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item1">Nos Contate</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item2">Termos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item3">Outros Serviços</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item4">Suporte</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item5">Privacidade</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item6">Pagamentos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item7">Feedback</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item8">Condições</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item9">Nosso grupo</div>
+        </a>
+    </div>
+    <footer>
+        <p>Copyright©2022 TOURISM NOTES </p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>

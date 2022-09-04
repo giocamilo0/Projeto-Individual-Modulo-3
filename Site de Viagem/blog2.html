@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<!--Início CSS-->
+<style>
+    /*Header - Menu*/
+
+    .navbar {
+        padding: 20px;
+        background-color: white;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .talent {
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    /**MENU - OPÇÕES**/
+    .nav-link {
+        justify-content: space-evenly;
+        color: rgba(11, 28, 95, 0.866);
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .navbar-nav a:hover {
+        background-color: rgba(94, 94, 89, 0.034);
+    }
+
+    .titulo-banner {
+        text-align: center;
+        color: rgba(11, 28, 95, 0.866);
+        padding-top: 70px;
+    }
+
+    /*INÍCIO CARDS*/
+
+    .card {
+        margin: 25px;
+        border: none;
+    }
+
+    .card-body a {
+        text-decoration: none;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .row {
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+        justify-content: space-around;
+    }
+
+    .list-group {
+
+        font-size: 17px;
+        padding-top: 20px;
+
+    }
+
+    .list-group-item {
+        background-color: rgba(11, 28, 95, 0.638);
+        color: white;
+    }
+
+    .viagens {
+        display: grid;
+        grid-template-rows: auto;
+
+    }
+
+    .card-text {
+        font-size: 20px;
+        background-color: rgba(214, 221, 249, 0.866);
+    }
+
+    /*FOOTER*/
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-content: space-between;
+        text-align: center;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: rgba(11, 28, 95, 0.866);
+        margin-top: 150px;
+        padding: 50px;
+        text-decoration: none;
+    }
+
+    .grid-container>div {
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-decoration: none;
+    }
+</style>
+
+<!--Início HTML-->
+
+<body>
+    <section>
+        <!-- Inicio Menu Nav -->
+        <header class="container-fluid menu-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+
+                        <h1 class="talent">TALENT ROUTE</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="sobrenos.html">Quem somos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promocao.html">Promoções</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="destino.html">Destinos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog2.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato2.html">Contato</a>
+                            </li>
+
+                            <a href="cadastro.html">
+                                <button
+                                    style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                    class="btn btn-primary" type="submit">Cadastre-se</button>
+                            </a>
+                            <a href="login3.html">
+                                <button
+                                    style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                    class="btn btn-primary" type="submit">Entrar</button>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!--HEADER - BANNER-->
+
+    <header>
+        <div class="containerimg">
+            <div class="row">
+                <div class="column-12">
+                    <img src="img/mapa.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-banner">DICAS DE VIAGENS</h2>
+    </header>
+
+    <!--INÍCIO MAIN - CARDS-->
+
+    <main>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/map.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <a href="#">
+                            <p class="card-text">6 razões pelas quais você deve fazer uma viagem com vários destinos</p>
+                        </a>
+                        <div class="list-group">
+                            <p>Pode haver tantas coisas em que pensar ao planejar uma viagem...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/italy.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <a href="#">
+                            <p class="card-text">Fotos e vídeos de viagens: ideias de coisas para fazer quando está
+                                preso em casa.</p>
+                        </a>
+                        <div class="list-group">
+                            <p>Saiba como tirar as melhores fotos em paisagens lindas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/hotel.jpg" class="card-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <a href="#">
+                            <p class="card-text">Quais são os diferentes tipos de acomodação disponíveis para suas
+                                viagens?</p>
+                        </a>
+                        <div class="list-group">
+                            <p>Dicas para planejamento, saúde, dinheiro, orçamento, segurança....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="titulo-banner">COMO PLANEJAR A SUA VIAGEM</h2>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/airplane.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">Melhores empregos que ajudam você a viajar e ver mais do mundo</p>
+                            </a>
+                            <p class="card-text"></p>
+                            <div class="list-group">
+                                <p>Trabalhando como guia turístico, que pode ser para expedições e viagens
+                                    multi-destinos...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/europe.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">Como viajar a Europa com baixo orçamento - Dicas para encontrar
+                                    viagens baratas</p>
+                            </a>
+                            <div class="list-group">
+                                <p>Passagens aéreas, hotéis e comida...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/trip.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">Coisas importantes para fazer antes de viajar (Checklist)</p>
+                            </a>
+                            <div class="list-group">
+                                <p>Ser um pouco mais organizado pode ser muito útil...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="titulo-banner">PLANEJAR ORÇAMENTO</h2>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/cam.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">Como proteger ítens pessoais caros ao viajar
+                                </p>
+                            </a>
+                            <div class="list-group">
+                                <p>Não levar a todos os lugares e mantê-los sempre guardados...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/eco.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">5 trocas simples para viajar de forma mais sustentável e ser mais
+                                    ecológico
+                                </p>
+                            </a>
+                            <div class="list-group">
+                                <p>Optar por transporte público, evitar comprar produtos de plástico...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/snow.jpg" class="card-img-top" alt="..." width="350px">
+                        <div class="card-body">
+                            <a href="#">
+                                <p class="card-text">20 dicas para manter você e seus pertences seguros durante a viagem
+                                </p>
+                            </a>
+                            <div class="list-group">
+                                <p>Separe suas fontes de dinheiro. Não deixe tudo em uma bolsa ou carteira...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <!--FOOTER-->
+
+    <div class="grid-container">
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item1">Nos Contate</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item2">Termos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item3">Outros Serviços</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item4">Suporte</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item5">Privacidade</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item6">Pagamentos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item7">Feedback</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item8">Condições</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item9">Nosso grupo</div>
+        </a>
+    </div>
+    <footer>
+        <p>Copyright©2022 TOURISM NOTES </p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>

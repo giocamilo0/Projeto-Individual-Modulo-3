@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--LINK CDN REMIX ICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<!--Início CSS-->
+<style>
+    /*Header - Menu*/
+
+    body {
+        background-image: linear-gradient(rgba(214, 221, 249, 0.63), rgba(46, 70, 167, 0.638));
+    }
+
+    .navbar {
+        padding: 20px;
+        background-color: rgba(214, 221, 249, 0.866);
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .talent {
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    /**MENU - OPÇÕES**/
+    .nav-link {
+        justify-content: space-evenly;
+        color: rgba(11, 28, 95, 0.866);
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .navbar-nav a:hover {
+        background-color: rgba(94, 94, 89, 0.052);
+        border-radius: 8px;
+    }
+
+
+    /**Início Login**/
+
+    .login-page {
+
+        max-width: 500px;
+        border-radius: 10px;
+        margin: 50px auto;
+    }
+
+    .form {
+
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 500px;
+        /*margin: 0 auto 100px;*/
+        margin: 50px auto;
+        /*padding: 45px;*/
+        padding: 30px 40px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border: 5px double #16599C;
+        ;
+    }
+
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #ffffff;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        border: 2px solid #16599C;
+        border-radius: 5px;
+    }
+
+    .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: rgb(11, 28, 95);
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+    }
+
+    .form button:hover,
+    .form button:active,
+    .form button:focus {
+        background: #16599C
+    }
+
+    .form .message {
+        margin: 15px 0 0;
+        color: #838383;
+        font-size: 12px;
+    }
+
+    .form .message a {
+        font-size: 13px;
+        color: rgb(11, 28, 95);
+        text-decoration: none;
+    }
+
+    .form .register-form {
+        display: none;
+    }
+
+    /**Botão**/
+
+    #forgot {
+        font-size: 12px;
+        text-decoration: none;
+        padding-left: 60%;
+        color: #838383;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(11, 28, 95);
+        font-weight: 700
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #16599C
+    }
+
+    .entrar {
+        color: rgb(11, 28, 95);
+        padding-bottom: 12px;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    }
+
+    #criar:hover {
+        color: #16599C
+    }
+
+
+    .container:before,
+    .container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .container .info {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .container .info h1 {
+        margin: 0 0 15px;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 300;
+        color: #1a1a1a;
+    }
+
+    .container .info span {
+        color: #4d4d4d;
+        font-size: 12px;
+    }
+
+    .logos {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .opcaocadastro {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: rgb(11, 28, 95);
+    }
+
+    /*INÍCIO FOOTER*/
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-content: space-between;
+        text-align: center;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: rgba(11, 28, 95, 0.866);
+        margin-top: 250px;
+        padding: 70px;
+        text-decoration: none;
+    }
+
+    .grid-container>div {
+        font-size: 20px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <section>
+        <!-- Inicio Menu Nav -->
+        <header class="container-fluid menu-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+
+                        <h1 class="talent">TALENT ROUTE</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="sobrenos.html">Quem somos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promocao.html">Promoções</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="destino.html">Destinos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog2.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato2.html">Contato</a>
+                            </li>
+                            <a href="cadastro.html">
+                                <button
+                                    style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                    class="btn btn-primary" type="submit">Cadastre-se</button>
+                            </a>
+                            <a href="login3.html">
+                                <button
+                                    style="color:rgb(255, 255, 255); background-color: rgb(11, 28, 95); border-color:rgb(11, 28, 95); font-weight: bold; margin-left: 20px; margin-top: 3px"
+                                    class="btn btn-primary" type="submit">Entrar</button>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="email address" />
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+
+            <form class="login-form">
+                <h5 class="entrar">Cadastre-se com:</h5>
+                <div class="logos">
+                    <a href="https://www.google.com/"><img src="img/google.png" width="50px"></a>
+                    <a href="https://www.facebook.com/"><img src="img/facebook.png" width="50px"></a>
+                </div>
+                <h5 class="opcaocadastro">Ou:</h5>
+                <input type="text" placeholder="Nome Completo" />
+                <input type="text" placeholder="E-mail" />
+                <input type="text" placeholder="Telefone" />
+                <input type="password" placeholder="Insira uma senha" />
+                <input type="password" placeholder="Confirme a senha" />
+
+                <button id="entrar" class="btn btn-block text-center my-3">Cadastrar</button>
+                <p class="message">Possui cadastro? <a href="#" id="criar">Entrar</a></p>
+
+                <p class="message">Ao fazer login ou criar uma conta, você concorda com nossos
+                    <a href="#" id="criar">Termos e Condições</a> sobre o tratamento dos seus dados pessoais.
+                </p>
+            </form>
+        </div>
+    </div>
+</main>
+
+    <!--FOOTER-->
+    <div class="grid-container">
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item1">Nos Contate</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item2">Termos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item3">Outros Serviços</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item4">Suporte</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item5">Privacidade</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item6">Pagamentos</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item7">Feedback</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item8">Condições</div>
+        </a>
+        <a href="#" style="text-decoration:none">
+            <div class="grid-item9">Nosso grupo</div>
+        </a>
+    </div>
+    <footer>
+        <p>Copyright©2022 TOURISM NOTES </p>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>
